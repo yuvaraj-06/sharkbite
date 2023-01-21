@@ -9,8 +9,8 @@ API_KEY_LIST = ["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"]
 print(API_KEY_LIST)
 # API_KEY = "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"  # "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"
  
-defaultPrompt_single = """Act as an Shark Tank USA Judge ,shark Kevin O'Leary,Mark Cuban,Lori Greiner will give his point of view in a sarcastic terms  and  whether they will offer and if yes how much would they be willing to offer for the idea human pitches for
-Human : {}
+defaultPrompt_single = """ Give me the  serious  angry reactions of Shark Tank US Judges,  kevin o'leary and Mark Cuban , Lori Greiner after pitching the idea considering  the pitch , probelm it solves and also see if there are any users already , also equity and the amount asked and they give their serious and angry reactions
+Pitch : {}
 """
 
 class GPT:

@@ -1,0 +1,6 @@
+requests
+fastapi
+openai
+uvicorn
+slowapi
+python-dotenv

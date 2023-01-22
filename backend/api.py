@@ -34,8 +34,8 @@ async def direct_pitch(request: Request):
     json_data = await request.json()
     print(json_data)
     name_pitch = json_data["pitch"]
-    res = pitch.main_gpt(name_pitch)
+    res = pitch.askGPT(name_pitch)
     return {"result": res}
 
 if __name__ == "__main__":
-    uvicorn.run(app)
+    uvicorn.run(app, port=8080)

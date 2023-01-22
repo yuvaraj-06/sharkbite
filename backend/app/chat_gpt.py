@@ -5,7 +5,7 @@ import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY_LIST = os.getenv('API_KEY_LIST').split(',')
+API_KEY_LIST = os.getenv('API_KEY_LIST')
 
 # defaultPrompt_single = """ Give me the serious  angry reactions of Shark Tank US Judges,  kevin o'leary and Mark Cuban , Lori Greiner after pitching the idea considering  the pitch , probelm it solves and also see if there are any users already , also equity and the amount asked and they give their serious and angry reactions
 # Pitch : {}
@@ -30,7 +30,7 @@ class GPT:
         Wrapper for the API to save the prompt and the result
         """
         print(self.api_keys)
-        api_key = self.api_keys[random.choice(self.choice)]
+        api_key = self.api_keys
         openai.api_key = api_key
         kwargs = {
             "engine": "text-davinci-003",

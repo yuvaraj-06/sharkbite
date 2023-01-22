@@ -4,10 +4,8 @@ import random
 import openai
 from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 API_KEY_LIST = os.getenv('API_KEY_LIST').split(',')
-
-# API_KEY = "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"  # "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"
 
 # defaultPrompt_single = """ Give me the serious  angry reactions of Shark Tank US Judges,  kevin o'leary and Mark Cuban , Lori Greiner after pitching the idea considering  the pitch , probelm it solves and also see if there are any users already , also equity and the amount asked and they give their serious and angry reactions
 # Pitch : {}

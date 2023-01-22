@@ -7,6 +7,7 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_ipaddr
 from slowapi.errors import RateLimitExceeded
 import uvicorn
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -38,4 +39,4 @@ async def direct_pitch(request: Request):
     return {"result": res}
 
 if __name__ == "__main__":
-    uvicorn.run(app, port=8080)
+    uvicorn.run(app, port=int(os.getenv('SERVER_PORT')))
